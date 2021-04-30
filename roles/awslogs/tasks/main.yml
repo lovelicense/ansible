@@ -29,7 +29,7 @@
 
 - name: configure awslogs to collect /var/log/helloworld/helloworld.log 
   ini_file: 
-    path: /etc/awslogs/config/"{{ name }}".conf 
+    path: /etc/awslogs/config/helloworld.conf 
     section: /var/log/helloworld/helloworld.log 
     option: "{{ item.option }}" 
     value: "{{ item.value }}"  
