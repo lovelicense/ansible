@@ -1,5 +1,5 @@
-
-sts: "{{ target | default('localhost') }}" 
+---
+- hosts: "{{ target | default('localhost') }}" 
   become: yes 
     roles: 
         - nodejs 
